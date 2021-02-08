@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Previsao do tempo para Hoje</title>
+	</head>
+	<body>
+		<h2>Pais: {{ local_pais }}</h2>
+		<h2>Cidade: {{ local_cidade }}</h2>
+		<a href="https://www.google.com/maps/@{{ latitude }},{{ longitude }},15z">
+			Ver local no Google Maps
+		</a>
+		<h2>Temperatura Agora: {{ temp1 }} graus. </h2>
+		<h2>Sensacao Termica: {{ sens1 }} graus. </h2>
+		<h2>Previsao por horario</h2>
+		<h2>{{ prev_hora_0 }}: Min:{{ prev_0_1 }} e Max:{{  prev_0_2  }} </h2>
+		<h2>{{ prev_hora_1 }}: Min:{{ prev_1_1 }} e Max:{{  prev_1_2  }} </h2>
+		<h2>{{ prev_hora_2 }}: Min:{{ prev_2_1 }} e Max:{{  prev_2_2  }} </h2>
+		<h2>{{ prev_hora_3 }}: Min:{{ prev_3_1 }} e Max:{{  prev_3_2  }} </h2>
+		<h2>{{ prev_hora_4 }}: Min:{{ prev_4_1 }} e Max:{{  prev_4_2  }} </h2>
+		<br>
+		<button onclick="javascript:history.go(-1);">Voltar</button>
+	</body>
+</html>
