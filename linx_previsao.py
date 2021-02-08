@@ -7,9 +7,10 @@ app = Flask(__name__)
 
 @app.route('/previsao', methods=['POST'])
 def previsao():
+        keyapi = '218a0ba28309d82d71363d7e9f878d33'
         cidade   = request.form['cidade']
-        agora    = requests.get('http://api.openweathermap.org/data/2.5/weather?q='+cidade+',BR&appid=218a0ba28309d82d71363d7e9f878d33')
-        previsao = requests.get('http://api.openweathermap.org/data/2.5/forecast?q='+cidade+',BR&appid=218a0ba28309d82d71363d7e9f878d33')
+        agora    = requests.get('http://api.openweathermap.org/data/2.5/weather?q='+cidade+',BR&appid='+keyapi)
+        previsao = requests.get('http://api.openweathermap.org/data/2.5/forecast?q='+cidade+',BR&appid='+keyapi)
 
         json_agora = agora.json()
 

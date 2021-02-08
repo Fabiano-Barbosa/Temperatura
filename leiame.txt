@@ -1,0 +1,9 @@
+Neste projeto procurei não utilizar nenhum framework na saída para facilitar o entendimento, comumente gosto de utilizar o bootstrap.
+Nos fontes do python utilizei as seguintes Bibliotecas...
+Flask			Para criação do webserver
+render_template		Para carregar a página com as informações necessárias no cliente
+request			Para pegar as informações repassadas pelo usuário, ex. cidade
+json			Para manipular as informações obtidas pela api do openweathermap e gerar o log do histórico
+os.path			Para consultar se o arquivo existe antes de ler e evitar um traceback
+requests		Para buscar o json resultante da consulta executada na api do openweathermap
+datetime		Para converter o timestamp recebido pela api do openweathermap em formato brasileiro de data e hora
